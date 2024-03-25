@@ -10,3 +10,5 @@ Timestamp: Mon Mar 18 2024 17:19:37 GMT-0400 (Eastern Daylight Time)
 URL: 127.0.0.1
 Timestamp: Mon Mar 18 2024 17:19:37 GMT-0400 (Eastern Daylight Time)
 
+::ffff:127.0.0.1 - - [25/Mar/2024:22:30:55 +0000] "GET /movies HTTP/1.1" 200 773 "-" "PostmanRuntime/7.37.0"
+::ffff:127.0.0.1 - - [25/Mar/2024:22:31:28 +0000] "GET / HTTP/1.1" 200 24 "-" "PostmanRuntime/7.37.0"
