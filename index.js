@@ -163,7 +163,7 @@ app.post('/users', (req, res) => {
     }
 });
 
-//Update username
+//Update user info
 app.put('/users/:id', (req, res) => {
   const { id } = req.params;
   const updatedUser = req.body;
@@ -171,7 +171,12 @@ app.put('/users/:id', (req, res) => {
   let user = users.find( user => user.id == id );
 
   if(user){
-      user.fullname = updatedUser.fullname;
+      user = {
+        user: user.id,
+        fullname: updatedUser.fullname,
+        email: updatedUser.email,
+        favMovies: user.favMovies
+      };
       res.status(200).json(user);
   }
   else{

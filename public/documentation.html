@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documention for movie api</title>
+    <style>
+        table , th, td {
+            margin: 5px;
+            border: 1px solid;
+        }
+    </style>
 </head>
 <body>
+    <h1>Documentation for movie api</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Description of Endpoint Return</th>
+                <th>Endpoint URL</th>
+                <th>Method Type</th>
+                <th>Format of Request Data</th>
+                <th>Format of Response Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Return a list of ALL movies</td>
+                <td>/movies</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about all movies</td>
+            </tr>
+            <tr>
+                <td>Return data about a single movie by title</td>
+                <td>/movies/:title</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about the requested movie ex:
+                    <code>
+                        {
+                            "title": "Inception",
+                            "director": "Christopher Nolan",
+                            "genre": "Sci-Fi"
+                        }
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Return data about a single movie's genre by title</td>
+                <td>/movies/:title/genre</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about the genre of a specific movie ex:
+                    <code>
+                        "Sci-Fi"
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Return data about a single movie's director by title</td>
+                <td>/movies/:title/director</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about the director of a specific movie ex:
+                    <code>
+                        "Christopher Nolan"
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Return the documentation page</td>
+                <td>/documentation</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A html page holding the documentation page of this app</td>
+            </tr>
+            <tr>
+                <td>Create new user</td>
+                <td>/users</td>
+                <td>POST</td>
+                <td>A JSON object holding data from the user to be added ex:
+                    <code>
+                        {
+                            "fullname": "Joey",
+                            "email": "joey@mail.com"
+                        }
+                    </code>
+                </td>
+                <td>A JSON object holding data from the user that has been added plus uuid ex:
+                    <code>
+                        {
+                            "fullname": "Joey",
+                            "email": "joey@mail.com",
+                            "id": "200f45b2-d144-49a6-9252-863c0fec99a9"
+                        }
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Update user name/email by uuid</td>
+                <td>/users/:id</td>
+                <td>PUT</td>
+                <td>A JSON object holding data from the user to be updated ex:
+                    <code>
+                        {
+                            "fullname": "Joana Doe",
+                            "email": "joanadoe@mail.com"
+                        }
+                    </code>
+                </td>
+                <td>A JSON object holding data from the user that has been updated ex:
+                    <code>
+                        {
+                            "user": "2",
+                            "fullname": "Joana Doe",
+                            "email": "joanadoe@mail.com",
+                            "favMovies": [
+                                {
+                                    "title": "Inception",
+                                    "director": "Christopher Nolan",
+                                    "genre": "Sci-Fi"
+                                }
+                            ]
+                        }
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Update users favMovies by title and user id</td>
+                <td>/users/:id/:title</td>
+                <td>POST</td>
+                <td>A JSON object holding data from the user about favMovies to be updated ex:
+                    <code>
+                        {
+                            "director": "Michael Bay",
+                            "genre": "Horror"
+                        }
+                    </code>
+                </td>
+                <td>A message returning if the users favMovies have been successfully updated with the updated favMovies logged on the console ex:
+                    <code>
+                        [{"title":"Inception","director":"Christopher Nolan","genre":"Sci-Fi"},{"title":"Insidious","director":"Michael Bay","genre":"Horror"}]
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>Delete a user's favMovie</td>
+                <td>/users/:id/:title</td>
+                <td>DELETE</td>
+                <td>None</td>
+                <td>A message returning if the users favMovies have been successfully updated with the updated favMovies logged on the console ex:
+                    <code>
+                        [{"title":"Inception","director":"Christopher Nolan","genre":"Sci-Fi"}]
+                    </code>
+                </td>
+                </tr>
+            <tr>
+                <td>Delete a user</td>
+                <td>/users/:id/</td>
+                <td>DELETE</td>
+                <td>None</td>
+                <td>A message returning if the user was successfully deleted</td>
+            </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
