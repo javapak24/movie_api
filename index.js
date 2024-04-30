@@ -131,19 +131,19 @@ app.get('/movies/:title',async (req, res) => {
 });
 
 //READ Genre by title
-app.get('/movies/:title/genre', (req, res) => {
-    const {title} = req.params;
-    const movie = movies.find( movie => movie.title === title )
+app.get('/movies/genre/:genre',async  (req, res) => {
+    const {genre} = req.params;
+    const movie = await Movies.findOne({ "Genre.Name": genre});
 
     if(movie){
-        res.status(200).json(movie.genre);
+        res.status(200).json(movie.Genre);
     }
     else{
         res.status(404).send('Movie not found :( ');
     }
 });
 
-//READ Director by title
+//READ Director by title ///// copy above syntax
 app.get('/movies/:title/director', (req, res) => {
     const {title} = req.params;
     const movie = movies.find( movie => movie.title === title )
@@ -162,16 +162,9 @@ app.get('/documentation', (req, res) => {
 });
 
 //Create new user
-app.post('/users', (req, res) => {
+app.post('/users', async (req, res) => {
     const newUser = req.body;
-    if(newUser.fullname){
-        newUser.id = uuid.v4();
-        users.push(newUser);
-        res.status(201).json(newUser);
-    }
-    else{
-        res.status(400).send('user needs name');
-    }
+        res.status(201).json(await Users.create(newUser));
 });
 
 //Update user info
