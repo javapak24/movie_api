@@ -1,0 +1,263 @@
+[{
+  "_id": {
+    "$oid": "6626eed2827f88f4453aaf39"
+  },
+  "Title": "Silence of the Lambs",
+  "Description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+  "Genre": {
+    "Name": "Thriller",
+    "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  "Director": {
+    "Name": "Jonathan Demme",
+    "Bio": "Robert Jonathan Demme was an American director, producer, and screenwriter.",
+    "Birth": "1944",
+    "Death": "2017"
+  },
+  "ImagePath": "silenceofthelambs.png",
+  "Featured": true
+},
+{
+  "_id": {
+    "$oid": "604fb2a43c12eaccf1a9f24e"
+  },
+  "Title": "Momento",
+  "Description": "Updated Description",
+  "Genre": {
+    "Name": "Mystery",
+    "Description": "A mystery film is a genre of film that revolves around the solution of a problem or a crime. It focuses on the efforts of the detective, private investigator or amateur sleuth to solve the mysterious circumstances of an issue by means of clues, investigation, and clever deduction."
+  },
+  "Director": {
+    "Name": "Christopher Nolan",
+    "Bio": "Updated Bio",
+    "Birth": "July 30, 1970",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0209144/mediaviewer/rm655365120/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Guy Pierce",
+      "Carrie-Anne Moss"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb2d23c12eaccf1a9f24f"
+  },
+  "Title": "Avengers Infinity War",
+  "Description": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
+  "Genre": {
+    "Name": "Action",
+    "Description": "Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases. Action films tend to feature a mostly resourceful hero struggling against incredible odds, which include life-threatening situations, a dangerous villain, or a pursuit which usually concludes in victory for the hero (though a small number of films in this genre have ended in the victory for the villain instead)."
+  },
+  "Director": {
+    "Name": "Joe Russo",
+    "Bio": "Anthony Russo and Joseph Russo collectively known as the Russo brothers (ROO-so), are American directors, producers, screenwriters, and actors. They direct most of their work together.",
+    "Birth": "July 8, 1971",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt4154756/mediaviewer/rm4044245504/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Robert Downey Jr.",
+      "Chris Hemsworth"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb2dd3c12eaccf1a9f250"
+  },
+  "Title": "John Wick",
+  "Description": "A retired hitman seeking vengeance for the killing of the dog given to him by his recently deceased wife, and for stealing his car.",
+  "Genre": {
+    "Name": "Action",
+    "Description": "Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases. Action films tend to feature a mostly resourceful hero struggling against incredible odds, which include life-threatening situations, a dangerous villain, or a pursuit which usually concludes in victory for the hero (though a small number of films in this genre have ended in the victory for the villain instead)."
+  },
+  "Director": {
+    "Name": "Chad Stahelski",
+    "Bio": "Chad Stahelski is an American stuntman and film director. He is known for his work on Buffy the Vampire Slayer and directing the 2014 film John Wick along with David Leitch, as well as solo directing its two sequels.",
+    "Birth": "September 20, 1968",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt2911666/mediaviewer/rm1723909376/",
+  "Featured": true,
+  "Actors": [
+    [
+      "Keanu Reeves",
+      "Michael Nyqvist"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb2e73c12eaccf1a9f251"
+  },
+  "Title": "The Prestige",
+  "Description": "Two friends and fellow magicians become bitter enemies after a sudden tragedy. As they devote themselves to this rivalry, they make sacrifices that bring them fame but with terrible consequences.",
+  "Genre": {
+    "Name": "Mystery",
+    "Description": "A mystery film is a genre of film that revolves around the solution of a problem or a crime. It focuses on the efforts of the detective, private investigator or amateur sleuth to solve the mysterious circumstances of an issue by means of clues, investigation, and clever deduction."
+  },
+  "Director": {
+    "Name": "Christopher Nolan",
+    "Bio": "Christopher Nolan is a British-American film director, producer, and screenwriter. Thanks to his stylized, time-bending renovation of film noir conventions, director Christpher Nolan established himself as a creator of psychologically demanding films that defied classification.",
+    "Birth": "July 30, 1970",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0482571/mediaviewer/rm4031813632/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Hugh Jackman",
+      "Christian Bale"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb2f53c12eaccf1a9f252"
+  },
+  "Title": "Hot Fuzz",
+  "Description": "Police officer Nicholas Angel is known to be the best across London. His seniors, who are jealous of his achievements, transfer him to a remote village where he encounters various challenges.",
+  "Genre": {
+    "Name": "Comedy",
+    "Description": "A comedy film is a category of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  "Director": {
+    "Name": "Edgar Wright",
+    "Bio": "Edgar Howard Wright is an English film director, screenwriter and producer. He is known for his fast-paced and kinetic, satirical genre films",
+    "Birth": "April 18, 1974",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0425112/mediaviewer/rm2797811200/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Simon Pegg",
+      "Nick Frost"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb3063c12eaccf1a9f253"
+  },
+  "Title": "Harold & Kumar Go to White Castle",
+  "Description": "Stoners Harold and Kumar figure that the only way to deal with the munchies is to indulge in the delicious burgers from White Castle. But their journey to the outlet is filled with crazy obstacles.",
+  "Genre": {
+    "Name": "Comedy",
+    "Description": "A comedy film is a category of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  "Director": {
+    "Name": "Danny Leiner",
+    "Bio": "Daniel Leiner was an American film and former television director. He was best known for directing the stoner comedy films Dude, Where's My Car? and Harold & Kumar Go to White Castle.",
+    "Birth": "May 13, 1961",
+    "Death": "October 18, 2018"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0366551/mediaviewer/rm484782080/",
+  "Featured": true,
+  "Actors": [
+    [
+      "Kal Penn",
+      "John Cho"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb3123c12eaccf1a9f254"
+  },
+  "Title": "Onward",
+  "Description": "In a magical realm where technological advances have taken over, Ian and Barley, two elven brothers, set out on an epic adventure to resurrect their late father for a day.",
+  "Genre": {
+    "Name": "Family",
+    "Description": "Family film is a genre that is contains appropriate content for younger viewers. Family film aims to appeal not only to children, but to a wide range of ages. While the storyline may appeal to a younger audience, there are components of the film that are geared towards adults- such as witty jokes and humor."
+  },
+  "Director": {
+    "Name": "Dan Scanlon",
+    "Bio": "Dan Scanlon is an American animator, storyboard artist and director, working for Pixar, for whom he has directed Monsters University and Onward.",
+    "Birth": "June 21, 1976",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt7146812/mediaviewer/rm2806809345/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Tom Holland",
+      "Chris Pratt"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb31d3c12eaccf1a9f255"
+  },
+  "Title": "The Conjuring",
+  "Description": "The Perron family moves into a farmhouse where they experience paranormal phenomena. They consult demonologists, Ed and Lorraine Warren, to help them get rid of the evil entity haunting them.",
+  "Genre": {
+    "Name": "Horror",
+    "Description": "Horror is a genre of speculative fiction which is intended to frighten, scare, or disgust. Literary historian J. A. Cuddon defined the horror story as a piece of fiction in prose of variable length which shocks, or even frightens the reader, or perhaps induces a feeling of repulsion or loathing."
+  },
+  "Director": {
+    "Name": "James Wan",
+    "Bio": "James Wan is an Australian film director, screenwriter, producer, and comic book writer. He has primarily worked in the horror genre as the co-creator of the Saw and Insidious franchises and the creator of The Conjuring Universe. The lattermost is the second highest-grossing horror franchise at $1.9 billion.",
+    "Birth": "February 26, 1977",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt1457767/mediaviewer/rm1035247872/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Vera Farmiga",
+      "Patrick Wilson"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604fb32c3c12eaccf1a9f256"
+  },
+  "Title": "Oldboy",
+  "Description": "A man, held captive for no apparent reason for years, is given a cell phone, money and expensive clothes and released. Unless he finds out the identity of his captor, an even worse fate awaits him.",
+  "Genre": {
+    "Name": "Thriller",
+    "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that evokes excitement and suspense in the audience.[1] The suspense element found in most films' plots is particularly exploited by the filmmaker in this genre. Tension is created by delaying what the audience sees as inevitable, and is built through situations that are menacing or where escape seems impossible."
+  },
+  "Director": {
+    "Name": "Chan-wook Park",
+    "Bio": "Park Chan-wook is a South Korean film director, screenwriter, producer, and former film critic and is one of tne of the most acclaimed and popular filmmakers in the world",
+    "Birth": "August 23, 1963",
+    "Death": ""
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0364569/mediaviewer/rm1299029248/",
+  "Featured": false,
+  "Actors": [
+    [
+      "Choi Min-sik",
+      "Yoo Ji-Tae"
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "604ffc8e3c12eaccf1a9f25d"
+  },
+  "Title": "The Shining",
+  "Description": "Jack drags his wife, Wendy, and his son, Danny, up snow-capped Colorado's secluded Overlook Hotel after taking up a job as an off-season caretaker. Things don't turn out according to plan...",
+  "Genre": {
+    "Name": "Horror",
+    "Description": "Horror is a genre of speculative fiction which is intended to frighten, scare, or disgust. Literary historian J. A. Cuddon defined the horror story as a piece of fiction in prose of variable length which shocks, or even frightens the reader, or perhaps induces a feeling of repulsion or loathing."
+  },
+  "Director": {
+    "Name": "Stanley Kubrick",
+    "Bio": "Stanley Kubrick was an American film director, producer, screenwriter, and photographer. He is frequently cited as one of the greatest filmmakers in cinematic history.",
+    "Birth": "July 26, 1928",
+    "Death": "March 7, 1999"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0081505/mediaviewer/rm3901111552/",
+  "Featured": true
+}]

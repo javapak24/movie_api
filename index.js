@@ -1,3 +1,14 @@
+const mongoose = require('mongoose');
+const Models = require('./models.js');
+
+mongoose.connect('mongodb+srv://java:passw0rd@cluster0.hzurcpu.mongodb.net/moviesdb', {
+   useNewUrlParser: true, useUnifiedTopology: true 
+  });
+
+const Movies = Models.Movie;
+
+const Users = Models.User;
+
 const express = require('express');
 const app = express();
 
@@ -102,14 +113,14 @@ app.get('/', (req, res) => {
 });
 
 // READ
-app.get('/movies', (req, res) => {
-    res.status(200).json(movies);
+app.get('/movies',async (req, res) => {
+    return res.json(await Movies.find())
 });
 
 //READ by title
-app.get('/movies/:title', (req, res) => {
+app.get('/movies/:title',async (req, res) => {
     const {title} = req.params;
-    const movie = movies.find( movie => movie.title === title )
+    const movie = await Movies.findOne({Title: title});
 
     if(movie){
         res.status(200).json(movie);
@@ -203,7 +214,7 @@ app.post('/users/:id/:title', (req, res) => {
   else{
       res.status(400).send('could not update favorite movies');
   }
-  console.log(JSON.stringify(user.favMovies));
+// console.log(JSON.stringify(user.favMovies));
 });
 
 //Delete a favorite movie
