@@ -237,7 +237,9 @@ app.delete('/users/:username/', passport.authenticate('jwt', { session: false })
     }
 });
 
+const PORT = process.env.PORT || 8080;
+
 //Server
-app.listen(8080, ()=>{
+app.listen(PORT, ()=>{
     console.log('server is running on 8080');
 });
