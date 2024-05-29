@@ -10,7 +10,9 @@ const Movies = Models.Movie;
 const Users = Models.User;
 
 const express = require('express');
+var cors = require('cors')
 const app = express();
+app.use(cors());
 
 const fs = require('fs'); // import built in node modules fs and path 
 const path = require('path');
