@@ -119,7 +119,7 @@ app.get('/', (req, res) => {
 });
 
 // READ// protect
-app.get('/movies', passport.authenticate('jwt', { session: false }), async (req, res) => {
+app.get('/movies', async (req, res) => {
     return res.json(await Movies.find());
 });
 
