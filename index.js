@@ -113,18 +113,17 @@ let movies = [
       }
   ];
 
-/**
-* GET homepage
-*/
 
+/**
+ * GET homepage
+ */
 app.get('/', (req, res) => {
     res.send('Welcome to my movie API!');
 });
 
 /**
-* GET all movies
-*/
-
+ * GET all movies
+ */
 app.get('/movies', async (req, res) => {
     return res.json(await Movies.find());
 });
