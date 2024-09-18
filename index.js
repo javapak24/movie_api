@@ -113,17 +113,26 @@ let movies = [
       }
   ];
 
+/**
+* GET homepage
+*/
 
 app.get('/', (req, res) => {
     res.send('Welcome to my movie API!');
 });
 
-// READ// protect
+/**
+* GET all movies
+*/
+
 app.get('/movies', async (req, res) => {
     return res.json(await Movies.find());
 });
 
-//READ by title// protect
+/**
+* GET movies by movie title
+*/
+
 app.get('/movies/:title', passport.authenticate('jwt', { session: false }), async (req, res) => {
     const {title} = req.params;
     const movie = await Movies.findOne({Title: title});
@@ -136,7 +145,9 @@ app.get('/movies/:title', passport.authenticate('jwt', { session: false }), asyn
     }
 });
 
-//READ Genre by title//protect
+/**
+* GET movies by movie genre
+*/
 app.get('/movies/genre/:genre', passport.authenticate('jwt', { session: false }), async  (req, res) => {
     const {genre} = req.params;
     const movie = await Movies.findOne({ "Genre.Name": genre});
@@ -149,7 +160,9 @@ app.get('/movies/genre/:genre', passport.authenticate('jwt', { session: false })
     }
 });
 
-//READ Director by title ///// protect
+/**
+* GET director by director name
+*/
 app.get('/movies/director/:director', passport.authenticate('jwt', { session: false }), async (req, res) => {
     const {director} = req.params;
     const movie = await Movies.find({ "Director.Name": director});
@@ -162,19 +175,25 @@ app.get('/movies/director/:director', passport.authenticate('jwt', { session: fa
     }
 });
 
-//READ Documentation///no protect
+/**
+* GET documentation page
+*/
 app.get('/documentation', (req, res) => {                  
     res.sendFile('public/documentation.html', { root: __dirname });
 });
 
 
-//Create new user/// no protect
+/**
+* POST create new user
+*/
 app.post('/users', async (req, res) => {
     const newUser = req.body;
         res.status(201).json(await Users.create(newUser));
 });
 
-//Update user info////protect
+/**
+* PUT update existing user
+*/
 app.put('/users/:username', passport.authenticate('jwt', { session: false }), async (req, res) => {
   const { username } = req.params;
   const updatedUser = req.body;
@@ -199,7 +218,9 @@ app.put('/users/:username', passport.authenticate('jwt', { session: false }), as
   });
 });
 
-//Update users favMovie///protect
+/**
+* POST add to user fav movie by movie id
+*/
 app.post('/users/:username/:movieId', passport.authenticate('jwt', { session: false }), async (req, res) => {
   const { username , movieId } = req.params;
   
@@ -212,7 +233,9 @@ app.post('/users/:username/:movieId', passport.authenticate('jwt', { session: fa
   res.json(user);
 });
 
-// Delete favorite movie
+/**
+* DELETE delete user fav movie by movie id
+*/
 app.delete('/users/:username/:movieId', passport.authenticate('jwt', { session: false }), async (req, res) => {
   const { username , movieId } = req.params;
   
@@ -226,7 +249,9 @@ app.delete('/users/:username/:movieId', passport.authenticate('jwt', { session: 
   
 });
 
-//Delete a user////
+/**
+* DELETE delete user by username
+*/
 app.delete('/users/:username/', passport.authenticate('jwt', { session: false }), async (req, res) => {
     const {username} = req.params;
     const user = await Users.findOneAndDelete({Username: username});
