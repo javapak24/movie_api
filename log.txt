@@ -191,3 +191,6 @@ Timestamp: Mon Mar 18 2024 17:19:37 GMT-0400 (Eastern Daylight Time)
 ::1 - - [08/May/2024:22:56:46 +0000] "POST /users/spongebob HTTP/1.1" 404 155 "-" "PostmanRuntime/7.37.0"
 ::1 - - [08/May/2024:22:56:58 +0000] "POST /users/spongebob HTTP/1.1" 404 155 "-" "PostmanRuntime/7.37.0"
 ::1 - - [08/May/2024:23:04:50 +0000] "POST /users HTTP/1.1" 201 183 "-" "PostmanRuntime/7.37.0"
+::1 - - [20/Sep/2024:17:13:59 +0000] "POST /users/ HTTP/1.1" 201 218 "-" "PostmanRuntime/7.41.2"
+::1 - - [20/Sep/2024:17:14:43 +0000] "POST /login/ HTTP/1.1" 200 678 "-" "PostmanRuntime/7.41.2"
+::1 - - [20/Sep/2024:17:14:52 +0000] "POST /login/ HTTP/1.1" 400 49 "-" "PostmanRuntime/7.41.2"
